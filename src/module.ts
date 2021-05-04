@@ -30,12 +30,12 @@ addEventListener('message', ({ data }: IBrokerEvent) => {
                 params: { channelData, sampleRate, tempoSettings }
             } = data;
 
-            const { bpm, offset, tempo } = guess(channelData, sampleRate, tempoSettings);
+            const { bpm, offset, tempo, peaks } = guess(channelData, sampleRate, tempoSettings);
 
             postMessage(<IGuessResponse>{
                 error: null,
                 id,
-                result: { bpm, offset, tempo }
+                result: { bpm, offset, tempo, peaks }
             });
         } else {
             throw new Error(`The given method "${(<any>data).method}" is not supported`);

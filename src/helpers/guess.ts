@@ -23,6 +23,7 @@ export const guess = (channelData: Float32Array, sampleRate: number, tempoSettin
     return {
         bpm,
         offset,
+        peaks,
         tempo
     };
 };

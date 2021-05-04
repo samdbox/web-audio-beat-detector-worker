@@ -8,6 +8,8 @@ export interface IGuessResponse {
 
         offset: number;
 
+        peaks: number[];
+
         tempo: number;
     };
 }

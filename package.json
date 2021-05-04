@@ -1,19 +1,9 @@
 {
-    "author": "Christoph Guttandin",
-    "bugs": {
-        "url": "https://github.com/chrisguttandin/web-audio-beat-detector-worker/issues"
-    },
     "config": {
         "commitizen": {
             "path": "cz-conventional-changelog"
         }
     },
-    "contributors": [
-        {
-            "email": "git@skratchdot.com",
-            "name": "skratchdot"
-        }
-    ],
     "dependencies": {
         "@babel/runtime": "^7.13.17",
         "tslib": "^2.2.0"
@@ -69,7 +59,6 @@
         "build/es5/",
         "src/"
     ],
-    "homepage": "https://github.com/chrisguttandin/web-audio-beat-detector-worker",
     "husky": {
         "hooks": {
             "commit-msg": "commitlint --edit --extends @commitlint/config-angular",
@@ -79,15 +68,15 @@
     "license": "MIT",
     "main": "build/es5/bundle.js",
     "module": "build/es2019/module.js",
-    "name": "web-audio-beat-detector-worker",
+    "name": "@samdbox/web-audio-beat-detector-worker",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chrisguttandin/web-audio-beat-detector-worker.git"
+        "url": "https://github.com/samdbox/web-audio-beat-detector-worker.git"
     },
     "scripts": {
         "prepublishOnly": "grunt build",
         "test": "grunt lint && grunt test"
     },
     "types": "build/es2019/module.d.ts",
-    "version": "5.2.5"
+    "version": "0.1.0"
 }
