@@ -73,6 +73,9 @@
         "type": "git",
         "url": "https://github.com/samdbox/web-audio-beat-detector-worker.git"
     },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
     "scripts": {
         "prepublishOnly": "grunt build",
         "test": "grunt lint && grunt test"
